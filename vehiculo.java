@@ -1,4 +1,4 @@
-public class vehiculo {
+public class Vehiculo {
     
     private String marca;
     private int anioFabricacion;
@@ -6,17 +6,17 @@ public class vehiculo {
     private boolean estaDisponible;
 
     
-    public vehiculo(String marca, int anioFabricacion, double precioBase, boolean estaDisponible) {
+    public Vehiculo(String marca, int anioFabricacion, double precioBase, boolean estaDisponible) {
         this.marca = marca;
         this.anioFabricacion = anioFabricacion;
         this.precioBase = precioBase;
         this.estaDisponible = estaDisponible;
     }
-    public vehiculo(String marca, int anioFabricacion, double precioBase) {
+    public Vehiculo(String marca, int anioFabricacion, double precioBase) {
         this(marca, anioFabricacion, precioBase, true); 
     }
 
-    public vehiculo(String marca, int anioFabricacion) {
+    public Vehiculo(String marca, int anioFabricacion) {
         this(marca, anioFabricacion, 0.0, false);
     }
     public String getMarca() { 
@@ -50,11 +50,11 @@ public class vehiculo {
     public void setEstaDisponible(boolean estaDisponible) { 
         this.estaDisponible = estaDisponible; 
     }
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Marca: " + marca + 
+               " | Año: " + anioFabricacion + 
+               " | Precio: $" + precioBase + 
+               " | Disponible: " + (estaDisponible ? "Sí" : "No");
+    }
 }

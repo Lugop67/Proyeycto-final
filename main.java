@@ -56,11 +56,21 @@ public class Main {
             "Kenworth T800", 2025, 
             "Cisterna", (byte)3, 24.0, true
         );
-
-
-
-
-
-
-
+        System.out.println(a1.toString());
+        System.out.println(a2.toString());
+        System.out.println(m1.toString());
+        System.out.println(m2.toString());
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+        System.out.println(cam1.toString());
+        System.out.println(cam2.toString());
     }
+}
+
+
+
+
+
+
+
+    

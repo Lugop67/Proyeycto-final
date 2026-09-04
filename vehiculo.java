@@ -12,6 +12,9 @@ public class vehiculo {
         this.precioBase = precioBase;
         this.estaDisponible = estaDisponible;
     }
+    public vehiculo(String marca, int anioFabricacion, double precioBase) {
+        this(marca, anioFabricacion, precioBase, true); 
+    }
 
 
 

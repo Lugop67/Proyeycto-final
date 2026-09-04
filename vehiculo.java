@@ -50,11 +50,11 @@ public class Vehiculo {
     public void setEstaDisponible(boolean estaDisponible) { 
         this.estaDisponible = estaDisponible; 
     }
-    @Override
+@Override
     public String toString() {
         return "Marca: " + marca + 
                " | Año: " + anioFabricacion + 
-               " | Precio: $" + precioBase + 
+               " | Precio: $" + (long)precioBase + " COP" + 
                " | Disponible: " + (estaDisponible ? "Sí" : "No");
     }
 }

@@ -1,49 +1,22 @@
-//clase vehiculo
 public class vehiculo {
-    //atributos
+    
     private String marca;
-    private String modelo;
-    private int anio;
-    private String color;
+    private int anioFabricacion;
+    private double precioBase;
+    private boolean estaDisponible;
+
     
-    //constructor
-    public vehiculo(String marca, String modelo, int anio, String color) {
+    public vehiculo(String marca, int anioFabricacion, double precioBase, boolean estaDisponible) {
         this.marca = marca;
-        this.modelo = modelo;
-        this.anio = anio;
-        this.color = color;
+        this.anioFabricacion = anioFabricacion;
+        this.precioBase = precioBase;
+        this.estaDisponible = estaDisponible;
     }
-    
-    //metodos
-    public String getMarca() {
-        return marca;
-    }
-    
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-    
-    public String getModelo() {
-        return modelo;
-    }
-    
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-    
-    public int getAnio() {
-        return anio;
-    }
-    
-    public void setAnio(int anio) {
-        this.anio = anio;
-    }
-    
-    public String getColor() {
-        return color;
-    }
-    
-    public void setColor(String color) {
-        this.color = color;
-    }
+
+
+
+
+
+
+
 }

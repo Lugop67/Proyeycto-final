@@ -31,5 +31,45 @@ public Automovil(String marca, int anioFabricacion, double precioBase,
         this.esSedan = esSedan;
 
 
-  }   
-}
+    } 
+    public String getTipoTransmision() {
+        return tipoTransmision;
+    }
+
+    public void setTipoTransmision(String tipoTransmision) {
+        this.tipoTransmision = tipoTransmision;
+    }
+
+    public byte getNumeroPuertas() {
+        return numeroPuertas;
+    }
+
+    public void setNumeroPuertas(byte numeroPuertas) {
+        this.numeroPuertas = numeroPuertas;
+    }
+
+    public float getCapacidadBaulLitros() {
+        return capacidadBaulLitros;
+    }
+
+    public void setCapacidadBaulLitros(float capacidadBaulLitros) {
+        this.capacidadBaulLitros = capacidadBaulLitros;
+    }
+
+    public boolean isEsSedan() {
+        return esSedan;
+    }
+
+    public void setEsSedan(boolean esSedan) {
+        this.esSedan = esSedan;
+    }
+
+    @Override
+    public String toString() {
+        return "AUTOMÓVIL -> " + super.toString() + 
+               " | Transmisión: " + tipoTransmision + 
+               " | Puertas: " + numeroPuertas + 
+               " | Baúl: " + capacidadBaulLitros + "L" + 
+               " | Sedán: " + (esSedan ? "Sí" : "No");
+    }
+}  
